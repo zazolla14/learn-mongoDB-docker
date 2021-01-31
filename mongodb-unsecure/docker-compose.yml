@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  mongo:
+    container_name: mongo-unsecure
+    image: mongo:4.4.3
+    ports:
+      - "37020:27017"
+    command: mongod --auth
+    # command: mongod --auth
